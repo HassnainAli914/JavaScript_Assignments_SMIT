@@ -1,32 +1,3 @@
-Here’s the **GitHub-friendly `README.md` with proper Markdown code**, which will render nicely in GitHub preview:
-
-````markdown
-# 📘 JavaScript Assignments - SMIT
-
-This repository contains JavaScript assignments for SMIT.  
-Below are detailed instructions for setting up this repository on your local machine or a new laptop.
-
----
-
-## ✅ Table of Contents
-- [Clone Repository](#-clone-repository-recommended)
-- [Create a New Repository](#-create-a-new-repository-if-starting-fresh)
-- [Link Existing Local Files](#-link-existing-local-files-to-github-repository)
-- [Pull Latest Changes](#-pull-latest-changes)
-- [Push Your Changes](#-push-your-changes)
-- [Notes](#-notes)
-
----
-
-## 🔹 Clone Repository (Recommended)
-If you are setting up on a new laptop or fresh environment:
-
-```bash
-git clone https://github.com/HassnainAli914/JavaScript_Assignments_SMIT.git
-````
-
-This will create a folder named `JavaScript_Assignments_SMIT` with all files.
-
 ---
 
 ## 🔹 Create a New Repository (If Starting Fresh)
@@ -97,13 +68,4 @@ git push origin main
 **Hassnain Ali**
 📌 [GitHub Profile](https://github.com/HassnainAli914)
 
-```
-
----
-
-✅ This will **preview perfectly on GitHub** with proper formatting, code blocks, emojis, and sections.
-
----
-
-Do you want me to **add GitHub badges** (like **Stars**, **Forks**, **Issues**, **Last Commit**) at the top and **a screenshot section** for your project? Or keep it just text-based?
 ```
