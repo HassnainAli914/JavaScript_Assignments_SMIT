@@ -23,13 +23,10 @@ function checkValid(event) {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
-    var emailCheck = email.includes("@") && email.includes(".");
+    var emailCheck = email.includes("@") && email.includes(".com");
 
     if (name === "" && email === "" && message === "") {
         alert("Please fill all the fields");
-        document.getElementById("submit").type = "button";
-    } else if (!emailCheck) {
-        alert("Please enter a valid email with @ and .");
         document.getElementById("submit").type = "button";
     } else if (name === ""){
         alert("Please fill Name field!");
@@ -37,6 +34,9 @@ function checkValid(event) {
         alert("Please fill Email field!");
     } else if (message === ""){
         alert("Please fill Message field!");
+    } else if (!emailCheck) {
+        alert("Please enter a valid email with @ and .com");
+        document.getElementById("submit").type = "button";
     }
     else {
         alert("Thank you " + name + ", we have received your email as " + email);
