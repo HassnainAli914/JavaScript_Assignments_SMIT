@@ -9,7 +9,7 @@
     let isImage = true;
     imgBox.addEventListener('click', function () {
     if (isImage){
-        imgBox.style.backgroundImage = 'url("/profile.jpg")';
+        imgBox.style.backgroundImage = 'url("images/profile.jpg")';
         isImage = false;
     } else {
         imgBox.style.backgroundImage = 'url("/")';
