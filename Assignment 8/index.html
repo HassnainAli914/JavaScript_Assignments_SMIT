@@ -78,10 +78,10 @@
 
       <div class="contact-form">
         <h3>Contact Me</h3>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button onclick="alert('Message sent!')">Send</button>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea rows="4" id="message" placeholder="Your Message"></textarea>
+        <input id="submit" type="submit" onclick="checkValid(event)" value="Submit">
       </div>
     </div>
   </div>
