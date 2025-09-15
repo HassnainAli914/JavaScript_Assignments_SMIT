@@ -51,7 +51,7 @@ function checkValid() {
 
 // assignment -- create a modern style div with border colors shadow and insert a defined image 
 // --------------------- Start ---------------------
-function styledDiv(Event) {
+function styledDiv() {
     var div = document.getElementById("styledDiv");
     div.style.cssText = "width:300px; border-radius: 10px; border:2px solid black; box-shadow: 5px 10px 18px #888888; padding:10px; margin-top:20px;";
 }
