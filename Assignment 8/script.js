@@ -19,27 +19,37 @@ imgBox.addEventListener('click', function () {
 
 // form validation
 const myform = document.getElementById('myform');
-myform.addEventListener('submit',  function (event) {
+myform.addEventListener('submit', function (event) {
+
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
     var emailCheck = email.includes("@") && email.includes(".com");
 
+    var namePop = document.getElementById("namePop")
+    var emailPop = document.getElementById("emailPop")
+    var msgPop = document.getElementById("msgPop")
+
     if (name === "" && email === "" && message === "") {
-        alert("Please fill all the fields");
+        msgPop.innerText = 'Please fill all the fields!';
         event.preventDefault();
-    } else if (name === ""){
-        alert("Please fill Name field!");
+
+    } else if (name === "") {
+        namePop.innerText = 'Please fill Name field!';
         event.preventDefault();
-    } else if (email === ""){
-        alert("Please fill Email field!");
+
+    } else if (email === "") {
+        emailPop.innerText = 'Please fill Email field!';
         event.preventDefault();
-    } else if (message === ""){
-        alert("Please fill Message field!");
+
+    } else if (message === "") {
+        msgPop.innerText = 'Please fill Message field!';
         event.preventDefault();
+
     } else if (!emailCheck) {
-        alert("Please enter a valid email with @ and .com");
+        emailPop.innerText = 'Please enter a valid email with @ and .com!';
         event.preventDefault();
+
     } else {
         alert("Thank you " + name + ", we have received your email as " + email);
     };

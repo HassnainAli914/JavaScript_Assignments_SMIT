@@ -11,7 +11,7 @@
       max-width: 1000px;
       margin: 20px auto;
       background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .sidebar {
@@ -21,7 +21,8 @@
       padding: 20px;
     }
 
-    .sidebar h2, .sidebar h3 {
+    .sidebar h2,
+    .sidebar h3 {
       margin-top: 20px;
     }
 
@@ -70,7 +71,15 @@
       margin-top: 30px;
     }
 
-    .contact-form input, .contact-form textarea {
+    .contact-form p {
+      color: red;
+      font-size: small;
+      font-weight: 600;
+      margin-top: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 10px;
       margin-bottom: 10px;
