@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Hassnain Ali - Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
     <!-- Sidebar -->
@@ -43,7 +45,8 @@
       <div class="section">
         <div class="section-title" onclick="toggleSection('profile')">Profile</div>
         <div class="section-content" id="profile">
-          <p>Passionate Web Developer with a strong foundation in HTML, CSS, JavaScript, and modern frameworks. Dedicated to building responsive, user-friendly websites and seamless digital experiences.</p>
+          <p>Passionate Web Developer with a strong foundation in HTML, CSS, JavaScript, and modern frameworks.
+            Dedicated to building responsive, user-friendly websites and seamless digital experiences.</p>
         </div>
       </div>
 
@@ -78,14 +81,17 @@
 
       <div class="contact-form">
         <h3>Contact Me</h3>
-        <input type="text" id="name" placeholder="Your Name">
-        <input type="email" id="email" placeholder="Your Email">
-        <textarea rows="4" id="message" placeholder="Your Message"></textarea>
-        <input id="submit" type="submit" onclick="checkValid(event)" value="Submit">
+        <form id="myform" method="post">
+          <input type="text" id="name" placeholder="Your Name">
+          <input type="email" id="email" placeholder="Your Email">
+          <textarea rows="4" id="message" placeholder="Your Message"></textarea>
+          <button id="submit" type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

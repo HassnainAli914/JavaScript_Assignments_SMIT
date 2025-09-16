@@ -18,8 +18,8 @@ imgBox.addEventListener('click', function () {
 });
 
 // form validation
-function checkValid(event) {
-    event.preventDefault()
+const myform = document.getElementById('myform');
+myform.addEventListener('submit',  function (event) {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
@@ -27,20 +27,20 @@ function checkValid(event) {
 
     if (name === "" && email === "" && message === "") {
         alert("Please fill all the fields");
-        document.getElementById("submit").type = "button";
+        event.preventDefault();
     } else if (name === ""){
         alert("Please fill Name field!");
+        event.preventDefault();
     } else if (email === ""){
         alert("Please fill Email field!");
+        event.preventDefault();
     } else if (message === ""){
         alert("Please fill Message field!");
+        event.preventDefault();
     } else if (!emailCheck) {
         alert("Please enter a valid email with @ and .com");
-        document.getElementById("submit").type = "button";
-    }
-    else {
+        event.preventDefault();
+    } else {
         alert("Thank you " + name + ", we have received your email as " + email);
-        document.getElementById("submit").type = "submit";
-        return true;
-    }
-}
+    };
+});
