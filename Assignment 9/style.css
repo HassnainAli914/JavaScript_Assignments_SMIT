@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    font-size: medium;
+    font-weight: 600;
+    list-style: none;
+}
+
+table {
+    padding: 5px;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
+#label {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+td {
+    border: none;
+    border-width: 0;
+    width: 60px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+li {
+    width: 100%;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    hyphens: auto; 
+}
+
+fieldset {
+    background-color: rgba(0, 223, 223, 0.527);
+    padding: 10px;
+}
+
+legend {
+    font-size: medium;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    /* width: 100%; */
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#add {
+    width: 145px;
+    height: 40px;
+    color: white;
+    background-color: black;
+}
+
+#edit {
+    width: 60px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+}
+
+#delete {
+    background-color: black;
+    font-weight: 600;
+    color: white;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 220px;
+    height: 100%;
+}
+
+.input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 240px;
+    height: 40px;
+}
+
+input:focus {
+    border-color: black;
+}
+
+#label {
+    text-align: center;
+}

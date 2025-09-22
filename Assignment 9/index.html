@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <fieldset>
+        <legend>ToDo List</legend>
+        <table>
+            <tr>
+                <th><input type="text" id="input" placeholder="Enter Work Here"></th>
+                <th colspan="2"><button id="add">Add</button></th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Hello World</li>
+                </td>
+                <td><button id="edit">Edit</button></td>
+                <td><button id="delete">Delete</button></td>
+            </tr>
+        </table>
+    </fieldset> -->
+
+    <fieldset>
+        <legend>ToDo List</legend>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="search" id="input" class="input" placeholder="Enter Work Here" autofocus></th>
+                    <th colspan="2"><button id="add">Add</button></th>
+                </tr>
+            </thead>
+            <tbody id="body">
+                <tr>
+                    <td id="label" colspan="3">
+                        <li>List of Works</li>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
