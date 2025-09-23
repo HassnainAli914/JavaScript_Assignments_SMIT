@@ -9,41 +9,41 @@
 </head>
 
 <body>
-    <!-- <fieldset>
-        <legend>ToDo List</legend>
-        <table>
-            <tr>
-                <th><input type="text" id="input" placeholder="Enter Work Here"></th>
-                <th colspan="2"><button id="add">Add</button></th>
-            </tr>
-            <tr>
-                <td>
-                    <li>Hello World</li>
-                </td>
-                <td><button id="edit">Edit</button></td>
-                <td><button id="delete">Delete</button></td>
-            </tr>
-        </table>
-    </fieldset> -->
+    <!-- Custom Theme Colors -->
+    <select id="theme">
+        <option value="rgba(0, 223, 223, 0.527)">Default Theme</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="SkyBlue">Sky Blue</option>
+        <option value="blue">Blue</option>
+        <option value="gray">Gray</option>
+        <option value="purple">Purple</option>
+    </select>
+    <!-- Custom Popup Notification -->
+    <div id="popup">
+        <p id="error"></p><span id="close">X</span>
+    </div>
 
-    <fieldset>
-        <legend>ToDo List</legend>
+    <fieldset id="fieldset">
+        <legend>ToDo List </legend>
         <table>
             <thead>
+
                 <tr>
-                    <th><input type="search" id="input" class="input" placeholder="Enter Work Here" autofocus></th>
+                    <th><input type="search" id="input" class="input" placeholder="Enter Work Here..." autofocus></th>
                     <th colspan="2"><button id="add">Add</button></th>
                 </tr>
-            </thead>
-            <tbody id="body">
                 <tr>
                     <td id="label" colspan="3">
                         <li>List of Works</li>
                     </td>
                 </tr>
+            </thead>
+            <tbody id="body">
             </tbody>
         </table>
     </fieldset>
+
 
     <script src="script.js"></script>
 </body>
